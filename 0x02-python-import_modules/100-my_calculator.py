@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 def calc():
-    from sys import argv, exit
     from calculator_1 import sub, add, mul, div
     if len(argv) != 4:
         print("./100-my_calculator.py <a> <operator> <b>")
@@ -23,4 +22,5 @@ def calc():
 
 
 if  __name__ == "__main__":
+    from sys import argv, exit
     calc()
