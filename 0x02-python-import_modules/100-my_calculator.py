@@ -2,12 +2,12 @@
 def calc():
     from sys import argv, exit
     from calculator_1 import sub, add, mul, div
-    a = int(argv[1])
-    operator = argv[2]
-    b = int(argv[3])
     if len(argv) != 4:
         print("./100-my_calculator.py <a> <operator> <b>")
         exit(1)
+    a = int(argv[1])
+    b = int(argv[3])
+    operator = argv[2]
     if operator == '+':
         result = add(a, b)
     elif operator == '-':
