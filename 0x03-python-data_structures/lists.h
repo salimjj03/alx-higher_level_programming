@@ -1,6 +1,7 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+#include <Python.h>
 #include <stddef.h>
 
 /**
@@ -17,6 +18,7 @@ typedef struct listint_s
     struct listint_s *next;
 } listint_t;
 
+void print_python_list_info(PyObject *p);
 size_t print_listint(const listint_t *h);
 listint_t *add_nodeint_end(listint_t **head, const int n);
 void free_listint(listint_t *head);
