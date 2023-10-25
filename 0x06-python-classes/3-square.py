@@ -9,16 +9,21 @@ class Square:
     """
     A squareroot class
 
-    This class have he follownig method:
-    - __init---: initialaze the values
+    This class have he follownig attribute.
+
+    Attributes:
+        attr1 (int): The attribute that take the value.
+
     """
 
     def __init__(self, size=0):
         """
         This method initialize values
 
-	:param1: the size
-	"""
+        Args:
+	    param1 (int): The value of the square
+
+        """
         if type(size) != int:
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -29,7 +34,8 @@ class Square:
     def area(self):
         """
         This Method find area
-	
-	:return: return the area
+
+        Returns:
+            return the area
         """
         return self.__size ** 2
