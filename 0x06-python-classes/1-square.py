@@ -39,7 +39,7 @@ Todo:
 class Square:
 	
 
-      """The summary line for a class docstring should fit on one line.
+    """The summary line for a class docstring should fit on one line.
 
     If the class has public attributes, they may be documented here
     in an ``Attributes`` section and follow the same formatting as a
@@ -54,14 +54,28 @@ class Square:
 
     """
 
-	def __init__(self, size):
+    def __init__(self, size):
 
-	   """
+        """
 
-	   A special fun
+        A special fun
+        Args:
+        siz (int): .....
 
-	   Args:
-	   siz (int): .....
+        """
+        self.__size = size
 
- 	   """
-	   self.__size = size
+my_square = Square(3)
+print(type(my_square))
+print(my_square.__dict__)
+
+try:
+    print(my_square.size)
+except Exception as e:
+    print(e)
+
+try:
+    print(my_square.__size)
+except Exception as e:
+    print(e)
+
