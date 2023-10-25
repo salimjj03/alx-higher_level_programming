@@ -4,8 +4,7 @@
 """ This modul find Sequare 0f number """
 
 
-class Square:
-    
+class Square:    
     """
     A squareroot class
 
