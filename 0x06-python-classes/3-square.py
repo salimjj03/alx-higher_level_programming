@@ -5,24 +5,10 @@
 
 
 class Square:    
-    """
-    A squareroot class
-
-    This class have he follownig attribute.
-
-    Attributes:
-        attr1 (int): The attribute that take the value.
-
-    """
+    """Find the squareroot of a number"""
 
     def __init__(self, size=0):
-        """
-        This method initialize values
-
-        Args:
-	    param1 (int): The value of the square
-
-        """
+        """This method initialize values"""
         if type(size) != int:
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -31,10 +17,5 @@ class Square:
             self.__size = size
 
     def area(self):
-        """
-        This Method find area
-
-        Returns:
-            return the area
-        """
+        """This Method find area"""
         return self.__size ** 2
