@@ -17,6 +17,7 @@ class Square:
         This method initialize values
 
         :param1: the size
+
         """
         if type(size) != int:
             raise TypeError("size must be an integer")
