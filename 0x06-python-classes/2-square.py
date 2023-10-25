@@ -10,13 +10,18 @@ class Square:
     This class have he follownig method:
     - __init__: initialaze the values of the square root.
 
+    Attributes:
+        attr1 (int): the size attribut.
+
     """
 
     def __init__(self, size=0):
         """ Discription of the __init__ method.
 
         The __init__ method initialize the values of the class.
-        :param size: The paramiter that contains the value.
+
+        Args:
+            param1 (int): The paramiter that contains the value.
 
         """
         if type(size) != int:
