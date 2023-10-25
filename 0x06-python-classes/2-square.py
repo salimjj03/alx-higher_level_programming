@@ -6,10 +6,11 @@
 
 class Square:    
     """
-    A squareroot class
+    This class find the squareroot of a givig number
 
     This class have he follownig method:
-    - __init---: initialaze the values
+    - __init---: initialaze the values of the square root
+
     """
 
     def __init__(self, size=0):
