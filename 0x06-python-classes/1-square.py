@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-""" .......... """
+
+
+""" .........."""
+
+
 class Square:
 	
     """
@@ -14,5 +18,5 @@ class Square:
 
 	Args:
 	   siz (int): .....
-	 	"""
+ 	"""
 	self.__size = size
