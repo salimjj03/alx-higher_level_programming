@@ -36,7 +36,7 @@ class Square:
             self.__size = value
 
     def my_print(self):
-    """The summary line for a class docstring should fit on one line."""
+        """The summary line for a class docstring should fit on one line."""
         if self.__size == 0:
             print()
         else:
