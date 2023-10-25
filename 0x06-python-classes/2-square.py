@@ -16,7 +16,7 @@ class Square:
         """ Discription of the __init__ method.
 
         The __init__ method initialize the values of the class.
-        :param1 size: The paramiter that contains the value.
+        :param size: The paramiter that contains the value.
 
         """
         if type(size) != int:
