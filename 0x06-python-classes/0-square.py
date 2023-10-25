@@ -1,13 +1,9 @@
 #!/usr/bin/python3
+
+
+"""Example Google style docstrings."""
+
+
 class Square:
-
-
-	"""
-	A empty class.
-
-	This class dose nothing:
-
-	"""
-
-
+	"""The summary line for a class docstring should fit on one line."""
 	pass
