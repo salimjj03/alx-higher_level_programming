@@ -18,6 +18,7 @@ class Square:
 	__size (int): value of the sqare
 
     """
+
     def __init__(self, size):
 
 	"""
