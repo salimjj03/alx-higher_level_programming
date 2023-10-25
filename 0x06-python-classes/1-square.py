@@ -37,8 +37,6 @@ Todo:
 
 
 class Square:
-	
-
     """The summary line for a class docstring should fit on one line.
 
     If the class has public attributes, they may be documented here
