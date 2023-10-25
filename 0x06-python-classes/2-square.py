@@ -7,11 +7,10 @@
 class Square:    
     """ This class find the squareroot of a giving number.
 
-    This class have he follownig method:
-    - __init__: initialaze the values of the square root.
+    This class have he follownig method attribute
 
     Attributes:
-        attr1 (int): the size attribut.
+        attr1 (str): Description of `attr1`.
 
     """
 
@@ -21,7 +20,7 @@ class Square:
         The __init__ method initialize the values of the class.
 
         Args:
-            param1 (int): The paramiter that contains the value.
+            param1 (size): Description of `size.
 
         """
         if type(size) != int:
