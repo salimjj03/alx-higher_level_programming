@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
 
-""" This modul find Sequare 0f number """
+"""This modul find Sequare 0f number."""
 
 
-class Square:    
-    """Find the squareroot of a number"""
+class Square:
+    """Find the squareroot of a number."""
 
     def __init__(self, size=0):
         """This method initialize values"""
