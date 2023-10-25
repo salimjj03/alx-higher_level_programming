@@ -5,19 +5,18 @@
 
 
 class Square:    
-    """
-    This class find the squareroot of a giving number.
+    """ This class find the squareroot of a giving number.
 
     This class have he follownig method:
-    - __init---: initialaze the values of the square root.
+    - __init__: initialaze the values of the square root.
 
     """
 
     def __init__(self, size=0):
-        """
-        This method initialize the values of the class.
+        """ Discription of the __init__ method.
 
-        :param1: The paramiter that contains the value.
+        The __init__ method initialize the values of the class.
+        :param1 size: The paramiter that contains the value.
 
         """
         if type(size) != int:
