@@ -4,7 +4,7 @@
 """ This modul find Sequare 0f number """
 
 
-class Square:    
+class Square:
     """ This class find the squareroot of a giving number.
 
     This class have he follownig method attribute
