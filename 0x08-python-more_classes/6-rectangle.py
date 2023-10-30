@@ -11,6 +11,8 @@ This is empty class
 class Rectangle:
     """ defines an empty class rectangle """
 
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """ Method that initialize the values. """
 
@@ -90,5 +92,5 @@ class Rectangle:
 
     def __del__(self):
         """ This print te values of tha object. """
-
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
