@@ -85,5 +85,5 @@ class Rectangle:
     def __repr__(self):
         """ This print te values of tha object. """
 
-        return "Rectangle(" + str(self.__width) + ","\
+        return "Rectangle(" + str(self.__width) + ", "\
                             + str(self.__height) + ")"
