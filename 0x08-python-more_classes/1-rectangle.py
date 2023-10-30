@@ -14,13 +14,13 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """ Method that initialize the values. """
 
-        if type(self.__width) != int:
+        if type(width) != int:
             raise TypeError("height must be an integer")
-        if self.__width < 0:
+        if width < 0:
             raise ValueError("height must be >= 0")
-        if type(self.__height) != int:
+        if type(height) != int:
             raise TypeError("height must be an integer")
-        if self.__height < 0:
+        if height < 0:
             raise ValueError("height must be >= 0")
         self.__height = height
         self.__width = width
