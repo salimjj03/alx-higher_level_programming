@@ -25,7 +25,7 @@ This module divide each element of a matrix.
 ... ]
 >>> matrix_divided(matrix, 7.0)
 [[0.57], [0.86]]
->>> >>> matrix = [[4]]
+>>> matrix = [[4]]
 >>> matrix_divided(matrix, 1)
 Traceback (most recent call last):
 ...
