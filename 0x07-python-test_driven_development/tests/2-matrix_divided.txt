@@ -27,9 +27,7 @@ This module divide each element of a matrix.
 [[0.57], [0.86]]
 >>> matrix = [[4]]
 >>> matrix_divided(matrix, 1)
-Traceback (most recent call last):
-...
-TypeError: matrix must be a matrix (list of lists) of integers/floats
+[[4.0]]
 >>> matrix = [
 ...     [1, 2, 3],
 ...     [4, 5, 6]
