@@ -7,6 +7,7 @@ Using ``add_integer``
 This text filee import module and test the functions:
 
     >>> add_integer = __import__('0-add_integer').add_integer
+    >>> import math
     >>> add_integer(1, 2)
     3
     >>> add_integer(100, -2)
@@ -37,3 +38,8 @@ This text filee import module and test the functions:
     Traceback (most recent call last):
     ...
     OverflowError: cannot convert float infinity to integer
+    >>> x = float("nan")
+    >>> add_integer(x, 1)
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
