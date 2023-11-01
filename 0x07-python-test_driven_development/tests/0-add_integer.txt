@@ -31,3 +31,9 @@ This text filee import module and test the functions:
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
+    >>> a = float("inf")
+    >>> b = 10
+    >>> add_integer(a, b)
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
