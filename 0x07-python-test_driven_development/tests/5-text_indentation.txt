@@ -50,6 +50,10 @@ salim :
 aliyu
 >>> text_indentation("Holberton School")
 Holberton School
+>>> text_indentation("Holberton.School")
+Holberton.
+<BLANKLINE>
+School
 >>> text_indentation(9)
 Traceback (most recent call last):
 ...
