@@ -1,0 +1,9 @@
+The ``lazy_matrix_mul`` module
+=============================
+
+Using ``lazy_matrix_mul``
+-------------------------
+
+function that prints My name is <first name> <last name>
+
+>>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
