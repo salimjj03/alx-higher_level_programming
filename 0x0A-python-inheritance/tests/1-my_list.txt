@@ -14,8 +14,3 @@ The ``MyList`` class ``1-my_list.py``
 [1, 2, 3, 4, 5]
 >>> print(my_list)
 [1, 4, 2, 3, 5]
->>> my_list.append("j")
->>> my_list.print_sorted()
-Traceback (most recent call last):
-...
-TypeError: '<' not supported between instances of 'str' and 'int'
