@@ -61,7 +61,6 @@ class Rectangle(BaseGeometry):
             .format(__class__.__name__, self.__width, self.__height)
 
 
-
 class Square(Rectangle):
     """ This class is sub class of super class.
 
