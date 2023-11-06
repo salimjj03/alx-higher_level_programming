@@ -30,6 +30,7 @@ class BaseGeometry:
         self.name = name
         self.value = value
 
+
 class Rectangle(BaseGeometry):
     """ This class is sub class of super class.
 
