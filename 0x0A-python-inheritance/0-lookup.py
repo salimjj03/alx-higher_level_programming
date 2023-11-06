@@ -5,6 +5,7 @@ This module return attiribte and method.
 
 """
 
+
 def lookup(obj):
     """ The function that dose the work.
 
