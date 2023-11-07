@@ -12,5 +12,5 @@ def write_file(filename="", text=""):
     """
 
     with open(filename, "w", encoding="UTF8") as myfile:
-       size =  myfile.write(text)
+        size = myfile.write(text)
     return size
