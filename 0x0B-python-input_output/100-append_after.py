@@ -6,7 +6,7 @@ This Module reads a text file.
 """
 
 
-def to_json_string(my_obj):
+def append_after(filename="", search_string="", new_string=""):
     """ This function dose the work.
 
     """
