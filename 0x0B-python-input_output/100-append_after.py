@@ -11,9 +11,9 @@ def append_after(filename="", search_string="", new_string=""):
 
     """
 
-     text = ""
+    text = ""
     with open(filename, "r", encoding='UTF8') as myfile:
-        line = myfile.read()
+        line = myfile.readlines()
     for i in line:
         if i.find(search_string) != -1:
             text += i + new_string
