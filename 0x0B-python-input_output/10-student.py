@@ -26,7 +26,7 @@ class Student():
         """
 
         ls = {}
-        if type(attrs) != []:
+        if type(attrs) != list:
             return self.__dict__
 
         else:
