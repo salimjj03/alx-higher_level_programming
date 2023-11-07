@@ -25,7 +25,7 @@ class Student():
 
         """
 
-        ls = {}
+        dic = {}
         if type(attrs) != list:
             return self.__dict__
 
