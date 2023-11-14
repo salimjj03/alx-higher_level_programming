@@ -63,7 +63,7 @@ class Base:
 
         ls = []
         if json_string:
-            return [json.loads(json_string)]
+            return json.loads(json_string)
         else:
             return ls
 
@@ -85,7 +85,7 @@ class Base:
         """ This is the constructor method
 
         """
-        
+
         ls = []
         with open(cls.__name__+".json", "r") as f:
             ls.append(cls.create({cls.from_json_string(f.readline())}))
