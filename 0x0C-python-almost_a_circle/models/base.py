@@ -79,3 +79,15 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """ This is the constructor method
+
+        """
+        
+        ls = []
+        with open(cls.__name__+".json", "r") as f:
+            ls.append(cls.create({cls.from_json_string(f.readline())}))
+
+        return ls
