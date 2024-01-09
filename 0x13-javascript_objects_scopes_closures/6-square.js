@@ -5,10 +5,10 @@ module.exports = class Square extends require('./4-rectangle.js') {
   }
 
   charPrint (c) {
-    if (c) {
-      for (let i = 0; i < this.width; i++) console.log(c.repeat(this.width));
-    } else if (c === undefined) {
+    if (c === undefined) {
       this.print();
+    } else {
+      for (let i = 0; i < this.width; i++) console.log(c.repeat(this.width));
     }
   }
 };
