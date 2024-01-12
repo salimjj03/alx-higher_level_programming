@@ -22,10 +22,13 @@ if __name__ == "__main__":
             ORDER BY id", (st,))
 
     result = cur.fetchall()
-    for row in result:
-        print("{}, ".format(row[0])
-              if row != result[-1]
-              else "{}{}".format(row[0], "\n"), end="")
+    if result:
+        for row in result:
+            print("{}, ".format(row[0])
+                  if row != result[-1]
+                  else "{}{}".format(row[0], "\n"), end="")
+    else:
+        print()
 
     cur.close()
     db.close()
