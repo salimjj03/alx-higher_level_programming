@@ -10,14 +10,15 @@ from model_state import State
 from sys import argv
 
 
-url = "mysql://{}:{}@localhost/{}".format(argv[1], argv[2], argv[3])
-engine = create_engine(url, pool_pre_ping=True)
+if __name__ == "__main__":
+    url = "mysql://{}:{}@localhost/{}".format(argv[1], argv[2], argv[3])
+    engine = create_engine(url, pool_pre_ping=True)
 
-Session = sessionmaker(bind=engine)
-session = Session()
+    Session = sessionmaker(bind=engine)
+    session = Session()
 
-result = session.query(City, State).filter(
-        State.id == City.state_id).order_by(City.id)
-for r in result:
-    print("{}: ({}) {}".format(
-        r["State"].name, r["City"].id, r["City"].name))
+    result = session.query(City, State).filter(
+            State.id == City.state_id).order_by(City.id)
+    for r in result:
+        print("{}: ({}) {}".format(
+            r["State"].name, r["City"].id, r["City"].name))
