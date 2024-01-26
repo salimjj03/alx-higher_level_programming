@@ -8,6 +8,7 @@ from sys import argv
 from urllib.request import urlopen
 
 
-with urlopen(argv[1]) as response:
-    h = response.headers.get("X-Request-Id")
-    print(h)
+if __name__ == "__main__":
+    with urlopen(argv[1]) as response:
+        h = response.headers.get("X-Request-Id")
+        print(h)
