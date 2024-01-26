@@ -4,4 +4,10 @@ to the URL and displays the:wq
 value of the X-Request-Id variable f
 ound in the header of the response. """
 
-imd
+from sys import argv
+from urllib.request import urlopen
+
+
+with urlopen(argv[1]) as response:
+    h = response.headers.get("X-Request-Id")
+    print(h)
