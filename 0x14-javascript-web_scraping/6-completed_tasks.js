@@ -1,9 +1,9 @@
 #!/usr/bin/node
 const request = require('request');
-request(process.argv[2], function (error, response, body) {
+request(process.argv[2], (error, response, body) => {
   if (!error) {
     const dos = JSON.parse(body);
-    let complete = {};
+    const complete = {};
     dos.forEach((tdo) => {
       if (tdo.completed && complete[tdo.userId] === undefined) {
         complete[tdo.userId] = 1;
